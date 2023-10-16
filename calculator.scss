@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 311px;
+    width: 100%;
+}
+.Calculator{
+    background-color: brown;
+    border-radius: 6%;
+    height: 292px;
+    width: 337px;
+}
+.result_show{
+    background-color: yellow;
+    height: 33px;
+    width: 70%;
+    font-size: 30px;
+    margin: 10px 5px;
+    border: 2px solid;
+    overflow-x: auto;
+    overflow-y: hidden;
+    float: left;
+
+}
+.buttons{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    text-align: center;
+    height: 238px;
+    width: 328px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 5px;
+    grid-template-areas:
+    "item1 item2 item3 plus"
+    "item4 item5 item6 mines"
+    "item7 item8 item9 divide"
+    "item0 dot1 multiple equal" ;
+}
+.button{
+    padding: 7px;
+    margin: 5px;
+    background-color: burlywood;
+    font-size: 30px;
+    font-weight: 400;
+    border: none;
+    border-radius: 30%;
+    &:active{
+        transform: translateY(4px);
+    }
+    &:hover{
+        outline: 2px solid black;
+        background-color:rgb(189, 189, 189);
+        cursor: pointer;
+    }
+
+}
+
+.one{
+    grid-area: item1;
+}
+.two{
+    grid-area: item2;
+}
+.three{
+    grid-area: item3;
+}
+.four{
+    grid-area: item4;
+}
+.five{
+    grid-area: item5;
+}
+.six{
+    grid-area: item6;
+}
+.seven{
+    grid-area: item7;
+}
+.eight{
+    grid-area: item8;
+}
+.nine{
+    grid-area: item9;
+}
+.zero{
+    grid-area: item0;
+}
+.dot{
+    grid-area: dot1;
+}
+.clear1{
+    width: 72.64px;
+    height: 49.5;
+    background-color:red;
+    &:hover{
+        background-color: rgba(255, 0, 0, 0.915);
+    }
+}
+.plus{
+    grid-area: plus;
+}
+.mines{
+    grid-area: mines;
+}
+.multiple{
+    grid-area: multiple;
+}
+.divide{
+    grid-area: divide;
+}
+.equal{
+    background-color: blue;
+    color: white;
+    grid-area: equal;
+    &:hover{
+        background-color: rgba(0, 0, 255, 0.915);
+    }
+}
+.clear{
+    margin-right: 5px;
+    width: 25%;
+    float: right;
+}

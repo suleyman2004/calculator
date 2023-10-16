@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css" />
+  </head>
+  <body>
+    <section class="Header">
+      <div class="Calculator">
+        <div class="result_show1">
+          <div class="result_show">
+            <span id="first_number" ></span>
+            <span id="mark"></span>
+            <span id="second_number"></span>
+            <span id="result"></span>
+          </div>
+          <div class="clear">
+            <button class="button clear1" onclick="clear1()">C</button>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="button one" onclick="one()">1</button>
+          <button class="button two" onclick="two()">2</button>
+          <button class="button three" onclick="three()">3</button>
+          <button class="button four" onclick="four()">4</button>
+          <button class="button five" onclick="five()">5</button>
+          <button class="button six" onclick="six()">6</button>
+          <button class="button seven" onclick="seven()">7</button>
+          <button class="button eight" onclick="eight()">8</button>
+          <button class="button nine" onclick="nine()">9</button>
+          <button class="button zero" onclick="zero()">0</button>
+          <button class="button minus" onclick="minus()">-</button>
+          <button class="button plus" onclick="plus()">+</button>
+          <button class="button equal" onclick="equal()">=</button>
+          <button class="button divide" onclick="divide()">/</button>
+          <button class="button multiple" onclick="multiple()">*</button>
+          <button class="button dot" onclick="dot()">.</button>
+        </div>
+      </div>
+    </section>
+    <script src="./calculator.js"></script>
+  </body>
+</html>
